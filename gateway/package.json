@@ -1,0 +1,25 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-gateway": "nodemon gateway.js",
+    "start-service-core": "nodemon services/core/index.js",
+    "start-service-interviewq": "nodemon services/interviewq/index.js",
+    "start-service-resumeq": "nodemon services/resumeq/index.js",
+    "start": "node gateway.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/gateway": "^0.10.8",
+    "apollo-server": "^2.9.7",
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
